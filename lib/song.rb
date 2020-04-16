@@ -33,7 +33,9 @@ class Song
     if @@genres[genre]
      genre_count +=1 
    else 
-     @@genres[genre]
+     @@genres[genre] = 1
+   end
+   @
   end
   
   
