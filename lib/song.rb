@@ -28,6 +28,7 @@ class Song
     else
       @@artists = []
       @@artists << @artists
+    end
   end
   def self.genre_count
     
