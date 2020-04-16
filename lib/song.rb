@@ -23,12 +23,7 @@ class Song
     @@genres 
   end
   def self.artists
-    if @@artists[@artist]
-       @@artists
-    else
-      @@artists = []
-      @@artists << @artists
-    end
+   @@artists.uniq
   end
   def self.genre_count
     
