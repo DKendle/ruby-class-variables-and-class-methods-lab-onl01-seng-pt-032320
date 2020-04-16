@@ -23,8 +23,11 @@ class Song
     @@genres 
   end
   def self.artists
-    @@artists
-   
+    if @@artists[@artist]
+       @@artists
+    else
+      @@artists = []
+      @@artists << @artists
   end
   def self.genre_count
     
